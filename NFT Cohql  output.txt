@@ -1,0 +1,105 @@
+CohQL> select * from exchangeRates where key().fromCurrency = "EUR" and key().toCurrency = "JPY"
+2018-04-13 22:18:05.669/1828.323 Oracle Coherence 12.2.1.3.0 <Info> (thread=main, member=n/a): Loaded operational configuration from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/coherence-12.2.1.3.0.jar!/tangosol-coherence.xml"
+2018-04-13 22:18:05.740/1828.394 Oracle Coherence 12.2.1.3.0 <Info> (thread=main, member=n/a): Loaded operational overrides from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/coherence-12.2.1.3.0.jar!/tangosol-coherence-override-prod.xml"
+2018-04-13 22:18:05.741/1828.395 Oracle Coherence 12.2.1.3.0 <D5> (thread=main, member=n/a): Optional configuration override "/tangosol-coherence-override.xml" is not specified
+2018-04-13 22:18:05.747/1828.400 Oracle Coherence 12.2.1.3.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-config.xml" is not specified
+2018-04-13 22:18:05.748/1828.402 Oracle Coherence 12.2.1.3.0 <D5> (thread=main, member=n/a): Optional configuration override "cache-factory-builder-config.xml" is not specified
+2018-04-13 22:18:05.749/1828.402 Oracle Coherence 12.2.1.3.0 <D5> (thread=main, member=n/a): Optional configuration override "/custom-mbeans.xml" is not specified
+
+Oracle Coherence Version 12.2.1.3.0 Build 68243
+ Grid Edition: Production mode
+Copyright (c) 2000, 2017, Oracle and/or its affiliates. All rights reserved.
+
+2018-04-13 22:18:05.982/1828.636 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=main, member=n/a): Loaded cache configuration from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/hbg-coherence-0.0.127.jar!/coherence/hbg-cache-config.xml"
+2018-04-13 22:18:06.336/1828.990 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=main, member=n/a): Loaded Reporter configuration from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/coherence-12.2.1.3.0.jar!/reports/report-group.xml"
+2018-04-13 22:18:06.625/1829.278 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=main, member=n/a): Created cache factory com.tangosol.net.ExtensibleConfigurableCacheFactory
+2018-04-13 22:18:07.294/1829.948 Oracle Coherence GE 12.2.1.3.0 <D4> (thread=main, member=n/a): TCMP bound to /10.200.9.4:35171 using SystemDatagramSocketProvider
+2018-04-13 22:18:07.621/1830.275 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=7, Timestamp=2018-04-10 12:33:26.557, Address=10.200.8.166:38449, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,process:15898,member:hbg-datagrid-server-002, Role=DataWLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.622/1830.276 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=Cluster, member=n/a): This Member(Id=4, Timestamp=2018-04-13 22:18:07.436, Address=10.200.9.4:35171, MachineId=58548, Location=process:28961, Role=TangosolCoherenceDslqueryQueryPlus, Edition=Grid Edition, Mode=Production, CpuCount=8, SocketCount=4) joined cluster "hbg-datagrid-SIT" with senior Member(Id=7, Timestamp=2018-04-10 12:33:26.557, Address=10.200.8.166:38449, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,process:15898,member:hbg-datagrid-server-002, Role=DataWLSCluster-hbg-SIT, Edition=Grid Edition, Mode=Production, CpuCount=8, SocketCount=8)
+2018-04-13 22:18:07.739/1830.393 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=1, Timestamp=2018-04-10 21:29:59.614, Address=10.200.8.166:58239, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,process:30558,member:hbg-datagrid-server-003, Role=DataWLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.740/1830.395 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=2, Timestamp=2018-04-11 06:37:33.956, 
+Address=10.200.8.166:59276, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,process:31702,member:MBeanServer-001, Role=DataWLSClus
+ter-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.742/1830.396 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=3, Timestamp=2018-04-13 17:00:50.468, 
+Address=10.200.9.4:56639, MachineId=58548, Location=process:14805, Role=KuoniFdlApplication) joined Cluster with senior member 7
+2018-04-13 22:18:07.742/1830.396 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=5, Timestamp=2018-04-11 06:37:33.99, A
+ddress=10.200.8.167:56401, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,process:11878,member:hbg-datagrid-server-004, Role=Data
+WLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.742/1830.396 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=6, Timestamp=2018-04-11 06:37:34.01, A
+ddress=10.200.8.167:46443, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,process:11868,member:hbg-datagrid-server-005, Role=Data
+WLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.743/1830.396 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=8, Timestamp=2018-04-10 12:33:29.703, 
+Address=10.200.8.166:55142, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,process:16035,member:hbg-datagrid-server-001, Role=Dat
+aWLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.743/1830.397 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=9, Timestamp=2018-04-11 06:37:36.948, 
+Address=10.200.8.167:41481, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,process:11824,member:hbg-datagrid-server-006, Role=Dat
+aWLSCluster-hbg-SIT) joined Cluster with senior member 7
+2018-04-13 22:18:07.743/1830.397 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=10, Timestamp=2018-04-12 12:27:46.231,
+ Address=10.200.8.236:49203, MachineId=28436, Location=process:21010) joined Cluster with senior member 7
+2018-04-13 22:18:07.743/1830.397 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Cluster, member=n/a): Member(Id=13, Timestamp=2018-04-12 12:28:58.641,
+ Address=10.200.8.237:40755, MachineId=28437, Location=process:14299) joined Cluster with senior member 7
+2018-04-13 22:18:07.991/1830.645 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Transport:TransportService, member=n/a): Service TransportService is b
+ound to tmb://10.200.9.4:35171.60982
+2018-04-13 22:18:08.026/1830.680 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Transport:TransportService, member=n/a): Service TransportService join
+ed the cluster with senior service member 7
+2018-04-13 22:18:08.072/1830.726 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=main, member=n/a): Started cluster Name=hbg-datagrid-SIT, ClusterPor
+t=9094
+
+Group{Address=229.2.5.4, TTL=1}
+
+MasterMemberSet(
+  ThisMember=Member(Id=4, Timestamp=2018-04-13 22:18:07.436, Address=10.200.9.4:35171, MachineId=58548, Location=process:28961, Role=TangosolCohere
+nceDslqueryQueryPlus)
+  OldestMember=Member(Id=7, Timestamp=2018-04-10 12:33:26.557, Address=10.200.8.166:38449, MachineId=61729, Location=site:emea.kuoni.int,machine:lo
+ngcoh02c,process:15898,member:hbg-datagrid-server-002, Role=DataWLSCluster-hbg-SIT)
+  ActualMemberSet=MemberSet(Size=11
+    Member(Id=1, Timestamp=2018-04-10 21:29:59.614, Address=10.200.8.166:58239, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,pr
+ocess:30558,member:hbg-datagrid-server-003, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=2, Timestamp=2018-04-11 06:37:33.956, Address=10.200.8.166:59276, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,pr
+ocess:31702,member:MBeanServer-001, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=3, Timestamp=2018-04-13 17:00:50.468, Address=10.200.9.4:56639, MachineId=58548, Location=process:14805, Role=KuoniFdlApplication)
+    Member(Id=4, Timestamp=2018-04-13 22:18:07.436, Address=10.200.9.4:35171, MachineId=58548, Location=process:28961, Role=TangosolCoherenceDslque
+ryQueryPlus)
+    Member(Id=5, Timestamp=2018-04-11 06:37:33.99, Address=10.200.8.167:56401, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,pro
+cess:11878,member:hbg-datagrid-server-004, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=6, Timestamp=2018-04-11 06:37:34.01, Address=10.200.8.167:46443, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,pro
+cess:11868,member:hbg-datagrid-server-005, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=7, Timestamp=2018-04-10 12:33:26.557, Address=10.200.8.166:38449, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,pr
+ocess:15898,member:hbg-datagrid-server-002, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=8, Timestamp=2018-04-10 12:33:29.703, Address=10.200.8.166:55142, MachineId=61729, Location=site:emea.kuoni.int,machine:longcoh02c,pr
+ocess:16035,member:hbg-datagrid-server-001, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=9, Timestamp=2018-04-11 06:37:36.948, Address=10.200.8.167:41481, MachineId=61730, Location=site:emea.kuoni.int,machine:longcoh02d,pr
+ocess:11824,member:hbg-datagrid-server-006, Role=DataWLSCluster-hbg-SIT)
+    Member(Id=10, Timestamp=2018-04-12 12:27:46.231, Address=10.200.8.236:49203, MachineId=28436, Location=process:21010)
+    Member(Id=13, Timestamp=2018-04-12 12:28:58.641, Address=10.200.8.237:40755, MachineId=28437, Location=process:14299)
+    )
+  MemberId|ServiceJoined|MemberState|Version
+    1|2018-04-10 21:29:59.614|JOINED|12.2.1.3.0,
+    2|2018-04-11 06:37:33.956|JOINED|12.2.1.3.0,
+    3|2018-04-13 17:00:50.468|JOINED|12.2.1.3.0,
+    4|2018-04-13 22:18:07.436|JOINED|12.2.1.3.0,
+    5|2018-04-11 06:37:33.99|JOINED|12.2.1.3.0,
+    6|2018-04-11 06:37:34.01|JOINED|12.2.1.3.0,
+    7|2018-04-10 12:33:26.557|JOINED|12.2.1.3.0,
+    8|2018-04-10 12:33:29.703|JOINED|12.2.1.3.0,
+    9|2018-04-11 06:37:36.948|JOINED|12.2.1.3.0,
+    10|2018-04-12 12:27:46.231|JOINED|12.2.1.3.0,
+    13|2018-04-12 12:28:58.641|JOINED|12.2.1.3.0
+  RecycleMillis=1200000
+  RecycleSet=MemberSet(Size=0
+    )
+  )
+
+TcpRing{Connections=[3]}
+IpMonitor{Addresses=0, Timeout=15s}
+
+2018-04-13 22:18:08.114/1830.768 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=Invocation:Management, member=4): Service Management joined the cluste
+r with senior service member 7
+2018-04-13 22:18:08.742/1831.396 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=DistributedCache:hbg:ExchangeRatesService, member=4): Loaded POF con
+figuration from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/hbg-coherence-0.0.127.jar!/coherence/hbg-pof-config.xml"
+2018-04-13 22:18:08.770/1831.424 Oracle Coherence GE 12.2.1.3.0 <Info> (thread=DistributedCache:hbg:ExchangeRatesService, member=4): Loaded include
+d POF configuration from "jar:file:/opt/hbg-full-data-loader/full-data-loader-15.64.39709/lib/coherence-12.2.1.3.0.jar!/coherence-pof-config.xml"
+2018-04-13 22:18:09.127/1831.781 Oracle Coherence GE 12.2.1.3.0 <D5> (thread=DistributedCache:hbg:ExchangeRatesService, member=4): Service hbg:Exch
+angeRatesService joined the cluster with senior service member 7
+Results
+ExchangeRateData{current: 0.007634858319934158 size: 12}
